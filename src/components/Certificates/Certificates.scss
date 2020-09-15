@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+
+.Certificates {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+
+	@media screen and (min-width: map-get($breakpoints, "medium")) {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: stretch;
+	}
+}
+
+.Certificate {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	box-shadow: 0 0 1rem 0 rgba(69, 75, 102, 0.25);
+	border-radius: 1rem;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+
+	@media screen and (min-width: map-get($breakpoints, "medium")) {
+		width: 45%;
+	}
+}
+
+.Certificate-Title {
+	margin-bottom: 0.5rem;
+	font-size: 1.3em;
+
+	@media screen and (min-width: map-get($breakpoints, "extra-small")) {
+		font-size: 1.5em;
+	}
+}
+
+.Certificate-Details {
+	flex-grow: 1;
+	margin-bottom: 0.5rem;
+}
+
+.Certificate-ModalOpenButton {
+	padding: 0.5rem;
+	background-color: #007bff;
+	font-weight: 500;
+	font-size: 1em;
+	color: white;
+	border: none;
+	border-radius: 0.5rem;
+	display: block;
+	margin: 0 auto;
+}

@@ -1,0 +1,32 @@
+$breakpoints: (
+	extra-small: 576px,
+	small: 768px,
+	medium: 992px,
+	large: 1200px,
+	extra-large: 1600px,
+);
+
+%page-content {
+	max-width: 95vw;
+	margin: 0 auto;
+
+	@media screen and (min-width: map-get($breakpoints, "extra-small")) {
+		max-width: 90vw;
+	}
+
+	@media screen and (min-width: map-get($breakpoints, "small")) {
+		max-width: 80vw;
+	}
+
+	@media screen and (min-width: map-get($breakpoints, "medium")) {
+		max-width: 75vw;
+	}
+
+	@media screen and (min-width: map-get($breakpoints, "large")) {
+		max-width: 70vw;
+	}
+
+	@media screen and (min-width: map-get($breakpoints, "extra-large")) {
+		max-width: 60vw;
+	}
+}

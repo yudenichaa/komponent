@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.Services {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.Service {
+	width: 100%;
+	box-shadow: 0 0 1rem 0 rgba(69, 75, 102, 0.25);
+	border-radius: 1rem;
+	padding: 1rem 1rem 0 1rem;
+	margin-bottom: 1rem;
+
+	@media screen and (min-width: map-get($breakpoints, "large")) {
+		width: 47%;
+	}
+}
+
+.Service-Header {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.Service-Item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.Service-ItemText {
+	width: 100%;
+	margin-bottom: 1rem;
+
+	@media screen and (min-width: map-get($breakpoints, "extra-small")) {
+		width: 47%;
+	}
+}

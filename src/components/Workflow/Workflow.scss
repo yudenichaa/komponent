@@ -1,0 +1,41 @@
+@import "../../variables.scss";
+
+.Workflow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.WorkflowStep {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	width: 100%;
+
+	@media screen and (min-width: map-get($breakpoints, "extra-small")) {
+		width: 45%;
+	}
+
+	@media screen and (min-width: map-get($breakpoints, "medium")) {
+		width: 30%;
+	}
+
+	@media screen and (min-width: map-get($breakpoints, "extra-large")) {
+		width: 15%;
+	}
+}
+
+.WorkflowStep-Header {
+	margin-bottom: 2rem;
+}
+
+.WorkflowStep-Image {
+	margin-bottom: 2rem;
+}
+
+.WorkflowStep-Details {
+	text-align: center;
+	margin-bottom: 2rem;
+}

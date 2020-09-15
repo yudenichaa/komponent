@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+.Main {
+	background-color: rgb(246, 247, 249);
+}
+
+.Main-Content {
+	@extend %page-content;
+	padding-top: 1rem;
+}
